@@ -28,7 +28,7 @@
     <section class="read-more" th:with="postCursor = ${postFinder.cursor(post.metadata.name)}">
       <th:block th:if="${postCursor.hasPrevious()}">
         <div class="read-more-item">
-          <span class="read-more-item-dim">最近的文章</span>
+          <span class="read-more-item-dim">Recent Posts</span>
           <h2 class="post-list__post-title post-title">
             <a
               th:href="@{${postCursor.previous.status.permalink}}"
@@ -42,14 +42,14 @@
               th:text="${#dates.format(postCursor.previous.metadata.creationTimestamp,'yyyy-MM-dd')}"
               class="post-list__meta--date date"
             ></time>
-            <a class="btn-border-small" th:href="${postCursor.previous.status.permalink}">继续阅读</a>
+            <a class="btn-border-small" th:href="${postCursor.previous.status.permalink}">Read More</a>
           </div>
         </div>
       </th:block>
 
       <th:block th:if="${postCursor.hasNext()}">
         <div class="read-more-item">
-          <span class="read-more-item-dim">更早的文章</span>
+          <span class="read-more-item-dim">Earlier Posts</span>
           <h2 class="post-list__post-title post-title">
             <a th:href="@{${postCursor.next.status.permalink}}" th:title="|link to ${postCursor.next.spec.title}|"></a>
           </h2>
@@ -60,7 +60,7 @@
               th:text="${#dates.format(postCursor.next.metadata.creationTimestamp,'yyyy-MM-dd')}"
               class="post-list__meta--date date"
             ></time>
-            <a class="btn-border-small" th:href="${postCursor.next.status.permalink}">继续阅读</a>
+            <a class="btn-border-small" th:href="${postCursor.next.status.permalink}">Read More</a>
           </div>
         </div>
       </th:block>

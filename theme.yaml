@@ -3,12 +3,12 @@ kind: Theme
 spec:
   displayName: Vno-English
   author:
-    name: Wei Wang
+    name: Wei Wang, Zhang Yufeng
     website: https://onevcat.com
   description:
   logo: /themes/halo-theme-vno/assets/images/icon.png
-  website: https://github.com/halo-dev/halo-theme-vno
-  repo: https://github.com/halo-dev/halo-theme-vno
+  website: https://github.com/Miller-du/halo-theme-vno
+  repo: https://github.com/Miller-du/halo-theme-vno
   settingName: theme-vno-setting
   configMapName: theme-vno-configMap
   version: 2.0.0
