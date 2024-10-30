@@ -7,13 +7,13 @@
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
-        <a th:href="|${site.url}#blog|" th:title="|Visit the ${site.title} Homepage|" class="blog-button">
+        <a th:href="|${site.url}#blog|" th:title="|Visit ${site.title}|" class="blog-button">
           <img th:src="${site.logo}" width="80" th:alt="|${site.title} Logo|"/>
         </a>
         <h1 class="panel-cover__title panel-title">
           <a
-            th:href="${site.url}#blog"
-            th:title="|link to homepage for ${site.title}|"
+            th:href="|${site.url}#blog|"
+            th:title="|Visit ${site.title}|"
             class="blog-button"
             th:text="${site.title}"
           ></a>
