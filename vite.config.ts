@@ -7,7 +7,7 @@ export default ({ mode }: { mode: string }) => {
 
   return defineConfig({
     root: "./src",
-    base: isProduction ? "/themes/halo-theme-vno/assets/dist/" : "",
+    base: isProduction ? "/themes/halo-theme-vno-English/assets/dist/" : "",
     define: {
       "process.env": process.env,
     },

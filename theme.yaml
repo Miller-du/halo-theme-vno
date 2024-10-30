@@ -6,7 +6,7 @@ spec:
     name: Wei Wang, Zhang Yufeng
     website: https://onevcat.com
   description:
-  logo: /themes/halo-theme-vno/assets/images/icon.png
+  logo: /themes/halo-theme-vno-English/assets/images/icon.png
   website: https://github.com/Miller-du/halo-theme-vno
   repo: https://github.com/Miller-du/halo-theme-vno
   settingName: theme-vno-setting
