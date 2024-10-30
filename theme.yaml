@@ -1,7 +1,7 @@
 apiVersion: theme.halo.run/v1alpha1
 kind: Theme
 spec:
-  displayName: Vno
+  displayName: Vno-English
   author:
     name: Wei Wang
     website: https://onevcat.com
